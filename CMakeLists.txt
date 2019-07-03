@@ -166,7 +166,7 @@ install(DIRECTORY boost DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 # [see http://www.cmake.org/Wiki/CMake/Tutorials/How_to_create_a_ProjectConfig.cmake_file]
 
 # Add all targets to the build-tree export set
-export(TARGETS cppnetlib-client-connections cppnetlib-server-parsers
+export(TARGETS cppnetlib-client-connections cppnetlib-server-parsers network-uri
     FILE "${PROJECT_BINARY_DIR}/cppnetlibTargets.cmake")
 # Export the package for use from the build-tree
 # (this registers the build-tree with a global CMake-registry)
