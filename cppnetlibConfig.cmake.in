@@ -11,7 +11,6 @@ set(CPPNETLIB_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
 # Our library dependencies (contains definitions for IMPORTED targets)
 if(    NOT TARGET cppnetlib-client-connections
    AND NOT TARGET cppnetlib-server-parsers
-   AND NOT TARGET cppnetlib-uri
    AND NOT CPPNETLIB_BINARY_DIR)
   include("${CPPNETLIB_CMAKE_DIR}/cppnetlibTargets.cmake")
 endif()
@@ -19,6 +18,5 @@ endif()
 # These are IMPORTED targets created by cppnetlibTargets.cmake
 set(CPPNETLIB_LIBRARIES
     cppnetlib-client-connections
-    cppnetlib-server-parsers
-    cppnetlib-uri)
+    cppnetlib-server-parsers)
 #set(CPPNETLIB_EXECUTABLE ...) # maybe the examples?
